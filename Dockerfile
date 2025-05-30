@@ -13,7 +13,7 @@ RUN apk add --no-cache \
 RUN curl -L -o sortphotos.zip -s https://github.com/andrewning/sortphotos/archive/9037913957f604f7453d8e7b02570cfbb7c2a86d.zip && \
     unzip sortphotos.zip && \
     cd sortphotos-* && \
-    python setup.py install && \
+    pip3 install . && \
     cd .. && \
     rm -rf sortphotos.zip && \
     rm -rf sortphotos-*
