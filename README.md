@@ -1,6 +1,6 @@
 # sortphotos-docker
 
-A dockarized version of [andrewning/sortphotos][sortphotos-url] including all needed dependencies.
+A dockerized version of [andrewning/sortphotos][sortphotos-url] including all needed dependencies.
 
 ## bundled software
 
