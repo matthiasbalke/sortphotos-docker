@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker run --name sortphotos-dev --rm -it sortphotos:local $@
+docker run --name sortphotos-dev --rm -it matthiasbalke/sortphotos:local $@

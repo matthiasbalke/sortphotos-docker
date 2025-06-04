@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t sortphotos:local .
+docker build -t matthiasbalke/sortphotos:local .
