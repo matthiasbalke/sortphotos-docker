@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # use latest official build image from branch main
-IMAGE=ghcr.io/matthiasbalke/sortphotos:main
+IMAGE="ghcr.io/matthiasbalke/sortphotos:main"
 # use local build image
-#IMAGE=matthiasbalke/sortphotos:local
+#IMAGE="matthiasbalke/sortphotos:local"
 
 echo ">> resetting test bed..."
 mv test/target/* test/source/ || true
