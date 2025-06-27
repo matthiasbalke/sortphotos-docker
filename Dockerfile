@@ -9,8 +9,8 @@ RUN apk add --no-cache \
  perl=5.36.2-r1 \
  exiftool=12.60-r0
 
-# install sortphotos from pinned commit (as the project does not use tags)
-RUN curl -L -o sortphotos.zip -s https://github.com/andrewning/sortphotos/archive/9037913957f604f7453d8e7b02570cfbb7c2a86d.zip && \
+# install sortphotos from release zip
+RUN curl -L -o sortphotos.zip -s https://github.com/matthiasbalke/sortphotos/archive/refs/tags/2.0.0.zip && \
     unzip sortphotos.zip && \
     cd sortphotos-* && \
     pip3 install . && \
