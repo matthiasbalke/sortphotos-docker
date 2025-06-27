@@ -11,13 +11,13 @@ A dockerized version of [andrewning/sortphotos][sortphotos-url] including all ne
 
 ## Usage
 ```sh
-docker run --rm -it ghcr.io/matthiasbalke/sortphotos:0.1.1 <sortphotos arguments here>
+docker run --rm -it ghcr.io/matthiasbalke/sortphotos:0.2.0 <sortphotos arguments here>
 ```
 
 To sort all pictures form `/Users/Me/MessyDirectory` into `/Users/Me/Pictures`, mount `/source` and `/target` directory into container and run with desired `sortphotos` arguments.
 
 ```sh
-docker run --rm -it ghcr.io/matthiasbalke/sortphotos:0.1.1 \
+docker run --rm -it ghcr.io/matthiasbalke/sortphotos:0.2.0 \
            --mount type=bind,src=/Users/Me/MessyDirectory,dst=/source \
            --mount type=bind,src=/Users/Me/Pictures,dst=/target \
            --recursive --test /source /target
