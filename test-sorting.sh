@@ -20,7 +20,7 @@ docker run \
   --mount type=bind,src=$(pwd)/test/source,dst=/source \
   --mount type=bind,src=$(pwd)/test/target,dst=/target \
   --rm -it ${IMAGE} \
-  --recursive /source /target
+  --recursive --exiftool /usr/bin/exiftool /source /target
 echo "done."
 echo ""
 
